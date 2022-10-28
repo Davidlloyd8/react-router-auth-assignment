@@ -1,33 +1,34 @@
 import { NavLink } from "react-router-dom";
 import "../index.css";
 function Navigation() {
+  const navBar = () => {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  };
   return (
-    <div className="navbar-container">
-      <nav>
-        <ul className="nav-list">
-          <NavLink to="/" className="logo">AltSchool</NavLink>
-          <li>
-            <NavLink to="/" className="nav-link">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className="nav-link">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/user" className="nav-link">
-              Users
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className="nav-link">
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+    <div class="topnav" id="myTopnav">
+      <NavLink to="/" className="logo">
+        AltSchool
+      </NavLink>
+      <NavLink to="/" className="nav-link">
+        Home
+      </NavLink>
+      <NavLink to="/about" className="nav-link">
+        About
+      </NavLink>
+      <NavLink to="/user" className="nav-link">
+        Users
+      </NavLink>
+      <NavLink to="/contact" className="nav-link">
+        Contact
+      </NavLink>
+      <NavLink className="icon" onClick={navBar}>
+        <i class="fa fa-bars"></i>
+      </NavLink>
     </div>
   );
 }
