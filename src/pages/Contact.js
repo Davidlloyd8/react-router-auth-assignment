@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import "../css/contact.css"
 import ContactImage from "../images/contact.jpg"
@@ -22,6 +23,7 @@ function Contact() {
                  </form>
             </div>
         </div>
+        <Footer />
         </>
     )
 }

@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import AboutImage from "../images/about.jpg"
 import "../css/about.css"
+import Footer from "../components/Footer";
 function About() {
   return (
     <>
@@ -26,6 +27,7 @@ function About() {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
