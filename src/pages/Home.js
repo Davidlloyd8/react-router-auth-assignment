@@ -1,5 +1,5 @@
 import Navigation from "../components/Navigation";
-import "../css/index.css"
+import "../css/home.css"
 
 function Home() {
     return (
