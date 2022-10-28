@@ -1,10 +1,11 @@
 import Navigation from "../components/Navigation";
+import "../css/index.css"
 
 function Home() {
     return (
         <>
         <Navigation />
-        <h1>Home</h1>
+        <div className="hero-section"></div>
         </>
     )
 }

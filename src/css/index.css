@@ -1,0 +1,18 @@
+div.hero-section {
+    background: url('../images/hero_section.png') no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-top: -150px;
+}
+
+@media screen and (max-width: 768px) {
+    div.hero-section {
+        margin-top: -90px;
+    }
+}
+@media screen and (max-width: 430px) {
+    div.hero-section {
+        margin-top: -70px;
+    }
+}

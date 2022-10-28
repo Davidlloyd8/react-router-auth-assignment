@@ -10,7 +10,7 @@ function Navigation() {
     }
   };
   return (
-    <div class="topnav" id="myTopnav">
+    <div className="topnav" id="myTopnav">
       <NavLink to="/" className="logo">
         AltSchool
       </NavLink>
@@ -27,7 +27,7 @@ function Navigation() {
         Contact
       </NavLink>
       <NavLink className="icon" onClick={navBar}>
-        <i class="fa fa-bars"></i>
+        <i className="fa fa-bars"></i>
       </NavLink>
     </div>
   );
