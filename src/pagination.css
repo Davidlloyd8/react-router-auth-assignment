@@ -15,7 +15,7 @@ div.pagination-container {
     justify-content: center;
     flex-wrap: wrap;
 }
-.pagination li {
+.pagination li, button.next, button.prev {
     margin-right: 5px;
     list-style-type: none;
     cursor: pointer;
@@ -26,6 +26,6 @@ div.pagination-container {
     width: 40px;
     border-radius: 12px;
 }
-.pagination li.next, li.prev {
+.pagination button.next, button.prev {
     width: 70px;
 }
