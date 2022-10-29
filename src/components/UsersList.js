@@ -23,12 +23,12 @@ function UsersList() {
   const total = data?.results?.length;
   //   const pages = 10;
   const pages = Math.ceil(total / PER_PAGE);
-  const skip = page * PER_PAGE - PER_PAGE;
+  //const skip = page * PER_PAGE - PER_PAGE;
   if (loading) {
     return <>Loading...</>;
   }
 
-  if ((!loading && error) || !data) {
+  if (!loading && error) {
     return <>Error</>;
   }
 
@@ -41,7 +41,7 @@ function UsersList() {
         resetKeys={[page]}
       >
         <h1>LIST OF USERS</h1>
-        <div class="box">
+        <div className="box">
           {/* // (page -1) * PER_PAGE, page * PER_PAGE    skip, skip + PER_PAGE*/}
           {data?.results
             .slice((page - 1) * PER_PAGE, page * PER_PAGE)
@@ -50,11 +50,11 @@ function UsersList() {
               const image = `${each.picture.large}`;
               const nationality = `${each.location.country}`;
               return (
-                <div class="card">
-                  <div class="imgBx">
+                <div className="card">
+                  <div className="imgBx">
                     <img src={image} alt="images" />
                   </div>
-                  <div class="details">
+                  <div className="details">
                     <h2 key={name.toLowerCase().replaceAll(" ", "")}>
                       {`${index + 1}.${name}`}
                       <br />

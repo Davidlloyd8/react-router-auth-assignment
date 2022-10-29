@@ -29,3 +29,31 @@ div.pagination-container {
 .pagination button.next, button.prev {
     width: 70px;
 }
+
+@media screen and (max-width: 430px) {
+    .pagination li, button.next, button.prev {
+        width: 30px;
+        padding: 5px;
+    }
+    .pagination button.next, button.prev {
+        width: 50px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .pagination li, button.next, button.prev {
+        width: 25px;
+        padding: 3px;
+    }
+    .pagination button.next, button.prev {
+        width: 40px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .pagination li, button.next, button.prev {
+        width: 20px;
+        padding: 3px;
+    }
+    .pagination button.next, button.prev {
+        width: 35px;
+    }
+}

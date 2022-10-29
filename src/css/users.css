@@ -88,3 +88,17 @@ h1  {
   display: block;
   margin-top: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .box {
+    display: block;
+    margin: 0;
+    width: 100%;
+    grid-template-columns: none;
+    grid-gap: 0;
+    align-items: center;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+}
